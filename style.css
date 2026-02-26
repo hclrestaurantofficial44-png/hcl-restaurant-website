@@ -1,3 +1,21 @@
+.background-slider{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-size:cover;
+background-position:center;
+z-index:-1;
+animation: bgChange 15s infinite;
+}
+
+@keyframes bgChange {
+0% { background-image: url("images/hero.jpg"); }
+33% { background-image: url("images/pizza.jpg"); }
+66% { background-image: url("images/pasta.jpg"); }
+100% { background-image: url("images/hero.jpg"); }
+}
 body{
 margin:0;
 font-family:Arial;
